@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -g -O0 CMakeFiles/system.dir/src/main.cpp.o CMakeFiles/system.dir/src/account.cpp.o CMakeFiles/system.dir/src/AccountException.cpp.o CMakeFiles/system.dir/src/date.cpp.o CMakeFiles/system.dir/src/usr.cpp.o -o system 

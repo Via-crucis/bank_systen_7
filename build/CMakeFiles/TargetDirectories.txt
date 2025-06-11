@@ -1,0 +1,3 @@
+/home/ubuntu/Desktop/Via_crucis/Myproject/build/CMakeFiles/system.dir
+/home/ubuntu/Desktop/Via_crucis/Myproject/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Desktop/Via_crucis/Myproject/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cd ${workspaceFolder}/build && make",   //简单到目录下的build目录下执行make
+            "group": {
+                "kind": "build",        //定义文件名类型，与其他build作出区分
+                "isDefault": true       //按下ctrl+shift+p默认执行这个build而非其他build
+            },
+            "problemMatcher": [         //报错以gcc格式输出，即常规cpp编译错误
+                "$gcc"
+            ]
+        },
+        {
+            "label": "clean", 
+            "type": "shell",
+            "command": "cd ${workspaceFolder}/build && make clean", //指令核心
+            "problemMatcher": []
+        },
+        {
+            "label": "rebuild",
+            "type": "shell",
+            "command": "cd ${workspaceFolder}/build && make rebuild", 
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
