@@ -103,7 +103,7 @@ void login()
 }
 int main()
 {
-    STARTUP();
+    STARTUP();//初始化用户信息
     int cmd;
     while(1)
     {
