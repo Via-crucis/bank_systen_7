@@ -4,9 +4,9 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "cd ${workspaceFolder}/build && make",   //简单到目录下的build目录下执行make
+            "command": "cd ${workspaceFolder}/build && make",   //切换到目录下的build目录下执行make
             "group": {
-                "kind": "build",        //定义文件名类型，与其他build作出区分
+                "kind": "build",        //定义操作类型，与其他build作出区分
                 "isDefault": true       //按下ctrl+shift+p默认执行这个build而非其他build
             },
             "problemMatcher": [         //报错以gcc格式输出，即常规cpp编译错误
@@ -16,7 +16,7 @@
         {
             "label": "clean", 
             "type": "shell",
-            "command": "cd ${workspaceFolder}/build && make clean", //指令核心
+            "command": "cd ${workspaceFolder}/build && make clean", //删除
             "problemMatcher": []
         },
         {
@@ -29,3 +29,4 @@
         }
     ]
 }
+//tasks中每一个花括号代表一个任务，按下ctrl+shift+b后会打开执行任务表，这些任务名都会显示在上vscode上方，点击即可执行对应任务名的指令，其中isDeFault是默认执行。
