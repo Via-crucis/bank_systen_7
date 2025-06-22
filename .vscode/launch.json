@@ -20,7 +20,8 @@
                 }
             ],
             "preLaunchTask": "build",   //注意该参数表明在执行launch之前，会执行task.json中名为build的操作
-            "miDebuggerPath": "/usr/bin/gdb"    //调试器地址，其他的照抄就行。
+            "miDebuggerPath": "/usr/bin/gdb"    //调试器地址
         }
     ]
 }
+//其余照抄就行。
